@@ -12,7 +12,7 @@ I = Variable(torch.eye(4))
 gamma = 0.96
 delta = 0.1
 
-for epoch in range(10000):
+for epoch in range(5000):
 	x1 = torch.sigmoid(y1)
 	x2 = torch.sigmoid(y2)
 
