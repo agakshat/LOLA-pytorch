@@ -15,9 +15,9 @@ r1 = Variable(torch.Tensor([-1,-3,0,-2]).type(dtype))
 r2 = Variable(torch.Tensor([-1,0,-3,-2]).type(dtype))
 I = Variable(torch.eye(4).type(dtype))
 
-gamma = Variable(torch.Tensor([0.96]).type(dtype))
+gamma = Variable(torch.Tensor([0.8]).type(dtype))
 delta = Variable(torch.Tensor([0.1]).type(dtype))
-eta = Variable(torch.Tensor([5]).type(dtype))
+eta = Variable(torch.Tensor([10]).type(dtype))
 
 for epoch in range(3000):
 	x1 = torch.sigmoid(y1)

@@ -6,10 +6,6 @@ dtype = torch.cuda.FloatTensor
 
 y1 = Variable(torch.zeros(5,1).type(dtype),requires_grad = True)
 y2 = Variable(torch.zeros(5,1).type(dtype),requires_grad = True)
-#y1.register_hook(print)
-#y2.register_hook(print)
-#y1.retain_grad()
-#y2.retain_grad()
 
 r1 = Variable(torch.Tensor([-1,-3,0,-2]).type(dtype))
 r2 = Variable(torch.Tensor([-1,0,-3,-2]).type(dtype))
@@ -22,7 +18,7 @@ eta = Variable(torch.Tensor([3]).type(dtype))
 V1arr = []
 V2arr = []
 
-for epoch in range(1000):
+for epoch in range(5000):
 	x1 = torch.sigmoid(y1)
 	x2 = torch.sigmoid(y2)
 

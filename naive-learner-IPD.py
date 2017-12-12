@@ -9,7 +9,7 @@ r1 = Variable(torch.Tensor([-1,-3,0,-2]))
 r2 = Variable(torch.Tensor([-1,0,-3,-2]))
 I = Variable(torch.eye(4))
 
-gamma = 0.96
+gamma = 0.6
 delta = 0.1
 
 for epoch in range(5000):
